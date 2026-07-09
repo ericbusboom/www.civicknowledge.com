@@ -1,0 +1,10 @@
+<nav class="main-nav" aria-label="Primary">
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="this.classList.toggle('active'); this.parentElement.classList.toggle('open')">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu">
+        {{ range .Site.Params.nav }}
+        <li><a href="{{ .url | relURL }}">{{ .name }}</a></li>
+        {{ end }}
+    </ul>
+</nav>

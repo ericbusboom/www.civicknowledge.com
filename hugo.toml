@@ -1,0 +1,38 @@
+baseURL = "https://www.civicknowledge.com/"
+languageCode = "en-us"
+title = "Civic Knowledge"
+theme = "wp-static"
+paginate = 10
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "friendly"
+
+[params]
+description = "Data for social development"
+blogHomepage = true
+sidebar = true
+showCategories = true
+accentColor = "#1e73be"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 2
+
+[[menu.main]]
+name = "Projects"
+url = "/projects/"
+weight = 3
+
+[[menu.main]]
+name = "Papers"
+url = "/papers/"
+weight = 4

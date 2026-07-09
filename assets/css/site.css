@@ -1,0 +1,157 @@
+/* Civic Knowledge — GeneratePress-style design overrides */
+:root {
+    --ck-accent: #1e73be;
+    --ck-text: #333333;
+    --ck-muted: #666666;
+    --ck-bg: #ffffff;
+    --ck-border: #e0e0e0;
+    --ck-max-width: 1200px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--ck-text);
+    background: var(--ck-bg);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header bar with space for logo */
+.site-header {
+    border-bottom: 1px solid var(--ck-border);
+    padding: 1rem 0;
+}
+
+.site-header .header-inner {
+    max-width: var(--ck-max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-header .site-logo img {
+    max-height: 60px;
+}
+
+.site-header .site-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.site-header .site-title a {
+    color: var(--ck-accent);
+    text-decoration: none;
+}
+
+/* Nav menu */
+.main-nav {
+    max-width: var(--ck-max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--ck-text);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    color: var(--ck-accent);
+}
+
+/* Main container with sidebar on the right */
+.main-container {
+    max-width: var(--ck-max-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.main-container .content-area {
+    flex: 1;
+    min-width: 0;
+}
+
+.main-container .sidebar {
+    flex: 0 0 300px;
+}
+
+/* Article styling */
+article.post {
+    margin-bottom: 2.5rem;
+}
+
+article.post h1,
+article.post h2,
+article.post h3 {
+    color: var(--ck-text);
+}
+
+article.post h1 a,
+article.post h2 a {
+    color: var(--ck-accent);
+    text-decoration: none;
+}
+
+/* Links */
+a {
+    color: var(--ck-accent);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar widgets */
+.sidebar .widget {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--ck-border);
+}
+
+.sidebar .widget-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--ck-text);
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--ck-border);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--ck-muted);
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .main-container .sidebar {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    .site-header .header-inner {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
