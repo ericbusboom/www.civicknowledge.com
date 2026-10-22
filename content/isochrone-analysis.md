@@ -2,6 +2,7 @@
 title: "Isochrone Analysis"
 date: 2022-01-10T17:17:02+00:00
 draft: false
+type: "post"
 categories: ["spatial_analysis"]
 tags: ["isochrone"]
 author: "eric"
@@ -57,7 +58,7 @@ For this example, we are only working with one location, and assuming the atract
 
 The original isochrone values are in meters from the central point and we use ${\beta}=1$ so the weighting for population will be $1/r$. Then we can multiply the weighting by the population to get a weighted population.
 
-![](/uploads/25/2022/01/97048fd3-2a12-4952-9a4f-f6a701df615f-output_20_1.png)
+![](/uploads/3/2022/01/97048fd3-2a12-4952-9a4f-f6a701df615f-output_20_1.png)
 
 The total population of the whole isochrone area is 383,044 but the weighted population within the isochrone is  43,005. The difference is the result of the $1/r$ weighting, which counts population farther away with a value less than population that is closer.  If we had used the straight line distance instead of the isochrone -- which would be a circle instead of the odd isochrone shape -- the 1/r weighted population would be 192,230.
 

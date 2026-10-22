@@ -2,6 +2,7 @@
 title: "HMDA Summary Reports"
 date: 2017-02-01T16:56:20+00:00
 draft: false
+type: "post"
 categories: ["Analysis", "Data Wrangling", "Project"]
 author: "eric"
 ---

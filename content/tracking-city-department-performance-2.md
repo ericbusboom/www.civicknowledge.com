@@ -2,6 +2,7 @@
 title: "Tracking City Department Performance"
 date: 2017-02-23T22:42:05+00:00
 draft: false
+type: "post"
 categories: ["Project"]
 author: "eric"
 ---

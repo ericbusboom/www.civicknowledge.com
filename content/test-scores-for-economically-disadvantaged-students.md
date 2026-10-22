@@ -2,6 +2,7 @@
 title: "Test Scores For Economically Disadvantaged Students"
 date: 2017-02-01T17:02:29+00:00
 draft: false
+type: "post"
 categories: ["Analysis", "Project"]
 author: "eric"
 description: "An analysis of California educational data"

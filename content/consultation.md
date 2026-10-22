@@ -1,10 +1,21 @@
 ---
-title: "Commercial Consultation"
-date: 2020-04-09T00:55:44+00:00
+title: "Data and Technology Consultation"
+date: "2020-04-08T21:29:43+00:00"
 draft: false
 author: "eric"
+url: "/consultation/"
 ---
 
-We offer consulting in 30 and 60 minute increments, perfect for quick double checks, reviewing ideas and other short tasks that benefit from external expertise. One hour consultations are often sufficient for quick data analysis or quality checks. 
+Civic Knowledge offers consulting services to social and commercial organizations. 
 
-For larger projects, schedule a free initial consultation.
+### Pro Bono Consulting for Civic and Social Organizations
+
+We offer pro bono and reduced price services for nonprofits, government agencies and journalists. Schedule a consultation to talk about how you can better serve you mission using data. 
+
+[Book a Pro Bono Consultation](</consultation/book-a-meeting/>)
+
+### Commercial Consulting
+
+For commercial organization we offer data management, cleaning, wrangling and analysis. We also can train your staff in data analysis tools and techniques. Schedule a fee initial consultation to talk about your needs. 
+
+[Book a Commerical Consultation](</consultation/consultation/>)

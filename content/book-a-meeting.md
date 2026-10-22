@@ -1,8 +1,9 @@
 ---
 title: "Pro-Bono Consultation"
-date: 2020-04-08T16:41:55+00:00
+date: "2020-04-08T16:41:55+00:00"
 draft: false
 author: "eric"
+url: "/consultation/book-a-meeting/"
 ---
 
 Does your civic or social organization need help working with data? Use this Pro-Bono data consultation to ask anything about using data in your organization, improving your data processes, training your staff, or using tools.   

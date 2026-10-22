@@ -1,8 +1,9 @@
 ---
 title: "Metadata and User Interface for Data Search"
-date: 2015-02-15T04:03:25+00:00
+date: "2015-02-15T04:03:25+00:00"
 draft: false
 author: "eric"
+url: "/papers/metadata-and-user-interface-for-data-search/"
 ---
 
 Data is useless without metadata, the "data about data" that provides information critical to finding, understanding and using data. Developing a data library requires establishing what metadata should be collected and presented to users. For the CHCF library of health data, metadata will be used for: 
@@ -24,19 +25,19 @@ Searching for data is a complex task, because there are many concepts that are h
 ## Entering Search Terms
 
 Because Google search has been prevalent for more than a decade, web users are familiar with search systems that look for terms in a document. So, a search for data, should also start with the user entering free-form search terms. The terms the user enters may address the topic of the data, or other aspects such as coverage, source or file formats. Here are some examples of freeform search terms:
-[code] 
-    "Diabetes Rates" 
-    
-    "Diabetes mortality"
-    
-    "Diabetes rates by county" 
-    
-    "Diabetes rates by county in census tracts"
-    
-    "Diabetes rates by county from 2010 to 2012"
-    
-    "Diabetes rates from CDC by tract for San Diego County from 2001 on with income. "
-[/code]
+```
+"Diabetes Rates" 
+
+"Diabetes mortality"
+
+"Diabetes rates by county" 
+
+"Diabetes rates by county in census tracts"
+
+"Diabetes rates by county from 2010 to 2012"
+
+"Diabetes rates from CDC by tract for San Diego County from 2001 on with income. "
+```
 
 Some of these terms are difficult to handle correctly, and will require specially structured metadata. For instance, in "Diabetes rates by county", the phrase "by county" implies that the geographic granularity of the data is a county. To correctly return results for this search requires that the dataset have a document associated with it that has the phrase "by county" or that the metadata for dataset indicates that the granularity is a county, and that the search system understands how to interpret phrases that include the word 'by'.
 
@@ -129,19 +130,19 @@ When users search on the web with a search engine like Google, they typically fo
   * Source
 
 The other metadata that were presented earlier are still valuable for search, but they are more likely to be used when scanning results, rather than when constructing a search query.  The **topic** of a dataset is represented by the index title, summary, keywords, subject and category of the dataset. These are freeform text, so standardization is prohibitively difficult.  **Granularity** , or Grain, refers to the type of thing that a row in the datasets records measurements for. For aggregated social data, granularity is most frequently a geographic area, usually one defined by the US Census. For microdata, the granularity can be a person, school, hospital or other entity.  **Geographic bounds** , or Geographic Coverage, is the area that contains the data. For social data, it is most often the smallest named geographic boundary that contains all of the data, and is usually a political, administrative or statistical area. **Temporal bounds** is the range of times from the first data point to the last. For social data, it is usually sufficient to record the time as a year, since datasets are most often updated yearly. **Variables** are the names of the columns in the dataset, such as age, gender, race/ethnicity, income range. For search, it is most important to record the existence of the variable.  **Categorical values** are the values of categorical variables. Users can use these values to find datasets that have records for specific entities, such as a particular hospital or school.  The **Source** is the agency or organization that publishes the data. These facets can be combined in a variety of ways, with a complete search query using from one to all of them. We have designed a few variations of a user interface model that makes these facets explicit, but also allows users to enter then very quickly with a simple text grammar.  Here is a mock up of the user interface model. [![42976501](/uploads/3/2016/07/42976501.png)](</uploads/3/2016/07/42976501.png>) The model allows the user to type in the search box to specify which facets to use, or to drag the facet into the search box.  So, if the user began typing:
-[code] 
-    about dia
-[/code]
+```
+about dia
+```
 
 The user interface would turn the “about” into a gray topic facet, and open up a search as you type box showing all topics that begin with “dia”: [![6603731](/uploads/3/2016/07/6603731.png)](</uploads/3/2016/07/6603731.png>)   Then, the user can either complete typing, or select one of the items in the list. The interface would run searches as the user types like Google does, so after typing:
-[code] 
-    about diabetes in california from 2010
-[/code]
+```
+about diabetes in california from 2010
+```
 
 The interface would look like: [![41893307](/uploads/3/2016/07/41893307.png)](</uploads/3/2016/07/41893307.png>) The user can type in the text phrase in any order, so it would be equally valid to type:
-[code] 
-    from 2010 in california about diabetes
-[/code]
+```
+from 2010 in california about diabetes
+```
 
 This interface is the most colorful of the alternatives we explored. Another option structures the search query as a fill-in-the-blank sentence: [![30323237](/uploads/3/2016/07/30323237.png)](</uploads/3/2016/07/30323237.png>) This model has the same results as the first, but is less colorful and dynamic. It’s also easier to implement. 
 

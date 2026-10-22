@@ -2,6 +2,7 @@
 title: "Health Data +"
 date: 2017-02-17T16:58:00+00:00
 draft: false
+type: "post"
 categories: ["Analysis", "Data Wrangling", "Indicators", "Project"]
 author: "eric"
 description: "A California Health Care Foundation sponsors projects to make health data more available."

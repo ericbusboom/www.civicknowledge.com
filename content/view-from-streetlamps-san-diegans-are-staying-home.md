@@ -2,6 +2,7 @@
 title: "View from Streetlamps: San Diegans are Staying Home"
 date: 2021-02-23T15:19:13+00:00
 draft: false
+type: "post"
 categories: ["Mobility"]
 author: "eric"
 description: "Visualizations of pedestrian traffic in San Diego showing the impact of COVID-19 lock down orders."
@@ -11,9 +12,9 @@ _Pedestrian counts from[San Diego’s smart streetlamps](<https://www.sandiego.g
 
 In 2018, [San Diego installed over 4,000 smart street lamps](<https://www.sandiego.gov/sustainability/energy-and-water-efficiency/programs-projects/smart-city>), one of the largest deployments of the CityIQ system in the world. These Internet-connected street lights give developers access to data on the intensity of pedestrians and traffic. But not anyone’s identity — the data is completely anonymous.
 
-The Data Library has been analyzing this data for over a year, to examine [daily rhythms in pedestrian traffic](<https://insights.civicknowledge.com/2019/04/pedestrians-rhythms-by-neigborhood/>), hourly [patterns in downtown parking](<https://www.sandiegodata.org/2019/02/30-million-san-diego-parking-records/>), and insights into [where San Diego goes to party](<https://www.sandiegodata.org/2019/06/where-san-diego-parties/>). We can use this same data source to visualize how well San Diegans have responded to heath department orders to stay home. Here is a plot of the pedestrian traffic from a set of about 12 sensors, in multiple neighborhoods around San Diego, including dates for storms ( blue ) and two closure orders (red), one for San Diego Unified School District, and one issued by the Mayor’s office of the City of San Diego.
+The Data Library has been analyzing this data for over a year, to examine [daily rhythms in pedestrian traffic](</pedestrians-rhythms-by-neigborhood/>), hourly [patterns in downtown parking](<https://www.sandiegodata.org/2019/02/30-million-san-diego-parking-records/>), and insights into [where San Diego goes to party](<https://www.sandiegodata.org/2019/06/where-san-diego-parties/>). We can use this same data source to visualize how well San Diegans have responded to heath department orders to stay home. Here is a plot of the pedestrian traffic from a set of about 12 sensors, in multiple neighborhoods around San Diego, including dates for storms ( blue ) and two closure orders (red), one for San Diego Unified School District, and one issued by the Mayor’s office of the City of San Diego.
 
-![](/uploads/19/2020/04/Screen-Shot-2020-04-21-at-9.59.18-AM.png?fit=1024%2C572&ssl=1)
+![](/uploads/7/2020/04/Screen-Shot-2020-04-21-at-9.59.18-AM.png)
 
 Note that the Y axis is unitless — traffic is expressed relative to the highest count for the year, because there is a lot of change in how many sensors are online and reporting, so only a relative measure makes sense. This plot makes it very clear that there is much less pedestrian traffic than normal, but it is not clear that the reduction is directly associated with the orders. The storms may have had an effect of driving traffic down, and the orders kept it down, but maybe there are other factors.
 
@@ -23,17 +24,17 @@ trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"co
 
 Overlaying that on the pedestrian traffic plot, it does look like a there is a relationship:
 
-![](/uploads/19/2020/04/Ped-vs-search.png?fit=1024%2C553&ssl=1)
+![](/uploads/7/2020/04/Ped-vs-search.png)
 
 But, that relationship would be easier to assess with a scatter plot, showing the regression line, and maybe a correlation coefficient.
 
-![](/uploads/19/2020/04/ped-vs-search-scatter.png?fit=1024%2C583&ssl=1)
+![](/uploads/7/2020/04/ped-vs-search-scatter.png)
 
 There clearly is a relationship there, but a correlation of -.52 isn’t very impressive. The correlation is a bit better if we look at just the period of when the pedestrian traffic is declining, from March 7 to March 18. In that range, the correlation is about 0.7.
 
 While that correlation still isn’t decisive, it is using data that has a complex structure, and some hidden gotchas. The San Diego CityIQ system has about 4,400 nodes, not not all of these nodes report consistently, and lately, there has been a significant decline in the number of nodes that are reporting pedestrian traffic. Here is a plot of the number of walkways ( a virtual line in the sidewalk that the sensors detect when a person walks across ) that have at least one report per day, for all of the data in the system.
 
-![](/uploads/19/2020/04/node-count.png?fit=1024%2C540&ssl=1)
+![](/uploads/7/2020/04/node-count.png)
 
 Note that the plot has a log-scale Y axis, so the peak number of walkways is in the thousands, but the number for the last month has been about 10, with the total dropping to zero for a few days. This is a lot of variability in the number of online sensors, and it’s is tricky to analyze data where sensors’ availability is inconsistent. Fortunately, one of the most constant periods is also the period of time we are studying for this post, but longer term analysis can be very tricky.
 

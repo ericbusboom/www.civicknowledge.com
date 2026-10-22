@@ -1,8 +1,9 @@
 ---
 title: "Front Page"
-date: 2022-02-01T06:00:07+00:00
+date: "2022-02-01T06:00:07+00:00"
 draft: false
 author: "eric"
+aliases: ["/front-page/", "/home/"]
 ---
 
 ## Data for Social Development
@@ -23,4 +24,4 @@ Data-driven indicators sites are easy, until you try to collect the indicators. 
 
 ## Projects
 
-[See All of Our Past Projects](<http://www.civicknowledge.com/posts/>)
+[See All of Our Past Projects](</posts/>)

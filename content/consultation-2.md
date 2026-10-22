@@ -1,8 +1,9 @@
 ---
 title: "Consultation"
-date: 2021-02-23T22:52:20+00:00
+date: "2021-02-23T22:52:20+00:00"
 draft: false
 author: "eric"
+url: "/consultation-2/"
 ---
 
 Civic Knowledge offers consulting services to social and commercial organizations.
@@ -11,7 +12,7 @@ Civic Knowledge offers consulting services to social and commercial organization
 
 We offer pro bono and reduced price services for nonprofits, government agencies and journalists. Schedule a consultation to talk about how you can better serve you mission using data.
 
-[Book a Pro Bono Consultation](<http://www.civicknowledge.com/consultation/book-a-meeting>)
+[Book a Pro Bono Consultation](</consultation/book-a-meeting/>)
 
 Book a Pro Bono Consultation
 
@@ -19,4 +20,4 @@ Book a Pro Bono Consultation
 
 For commercial organization we offer data management, cleaning, wrangling and analysis. We also can train your staff in data analysis tools and techniques. Schedule a free initial consultation to talk about your needs. 
 
-[Book a Commercial Consultation](<http://www.civicknowledge.com/consultation/initial-consultation/>)
+[Book a Commercial Consultation](</consultation/book-a-meeting/>)

@@ -2,6 +2,7 @@
 title: "Linking Student Analysts and Nonprofits"
 date: 2017-02-01T16:51:43+00:00
 draft: false
+type: "post"
 categories: ["Data Wrangling", "Project", "Social Benefit"]
 author: "eric"
 ---
@@ -14,4 +15,4 @@ When recently graduated students told us that it was difficult to land data anal
 
 ## The Solution
 
-In spring of 2015, operating as the[ San Diego Regional Data Library](<http://sandiegodata.wordpress.civicknowledge.com>), we ran a data contest with a student group at SDSU. The week long event gave 30 student teams valuable experience and produced [a broad range of data insights ](<http://sandiegodata.wordpress.civicknowledge.com/2015/03/2015-data-contest-winners/>)for the San Diego Food Systems Alliance and the Monarch School.
+In spring of 2015, operating as the[ San Diego Regional Data Library](<https://www.sandiegodata.org/>), we ran a data contest with a student group at SDSU. The week long event gave 30 student teams valuable experience and produced [a broad range of data insights ](<https://www.sandiegodata.org/2015/03/2015-data-contest-winners/>)for the San Diego Food Systems Alliance and the Monarch School.

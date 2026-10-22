@@ -1,8 +1,9 @@
 ---
 title: "Meta, Schema, Data: Packaging Data For Reuse"
-date: 2016-06-09T20:09:26+00:00
+date: "2016-06-09T20:09:26+00:00"
 draft: false
 author: "eric"
+url: "/papers/meta-schema-data-packaging-data-for-reuse/"
 ---
 
 _Public data can be much more useful with small improvements to how it is documented and packaged._ Despite decades of enthusiasm for data, it is still difficult and expensive to distribute data from producers to consumers. Skilled data analysts have access to more data than ever, but the broader range of data users, such as journalists, nonprofits, businesses and consumers still have difficulty finding and using data. Websites such as Census Reporter and DataUSA.io offer a model for how to increase data use, but these types of sites are very expensive to poduce.  To solve these problems, we propose a way of packaging data that can make data distribution sites like Census Reporter much easier to create and maintain, and ensure traditional analysts can find the data they need. These method add some cost to the data production process, but will yield enormous benefits to data consumers.  By developing simple standards for how to package data, data producers can make their datasets “machine comprehensible,” permitting the creation of better data access software that can store, publish, and visualize any properly packaged dataset. Better data packaging will result in making data:
@@ -48,7 +49,7 @@ Title | An Example Data Packages
 Description | This data package is an example of how simple a data package can be  
 Subject | Examples of data packages  
 Creator | Eric Busboom <eric@civicknowledge.com>  
-Publisher | [http://www.civicknowledge.com](<http://www.civicknowledge.com>)  
+Publisher | [/](</>)  
 The final worksheet is named “schema,” and it holds a description of the data:  **Column** | **Role** | **Datatype** | **Description**  
 ---|---|---|---  
 time | dimension | time/second | Time at which the part was sampled, in seconds from the start of the experiment.  

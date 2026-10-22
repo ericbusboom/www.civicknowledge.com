@@ -1,0 +1,30 @@
+{{- /* List of posts or datasets, replacing WordPress display-posts and
+       advgb/recent-posts lists. All filters must match.
+         section   "dataset" (default) or "post"
+         tags      comma-separated tag names
+         category  category name
+         pages     comma-separated page paths, instead of filters
+         excerpt   "true" to show each item's description */ -}}
+{{- $pages := where site.RegularPages "Type" (.Get "section" | default "dataset") -}}
+{{- with .Get "pages" -}}
+  {{- $pages = slice -}}
+  {{- range split . "," -}}
+    {{- with site.GetPage (strings.TrimSuffix "/" (trim . " ")) -}}{{ $pages = $pages | append . }}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with .Get "tags" -}}
+  {{- range split . "," -}}
+    {{- $pages = where $pages "Params.tags" "intersect" (slice (trim . " ")) -}}
+  {{- end -}}
+{{- end -}}
+{{- with .Get "category" -}}
+  {{- $pages = where $pages "Params.categories" "intersect" (slice .) -}}
+{{- end -}}
+{{- $excerpt := eq (.Get "excerpt") "true" -}}
+<ul class="post-list">
+{{- range sort $pages "Title" }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{- if $excerpt }}{{ with .Description | default (.Summary | plainify | truncate 160) }}<br><span class="post-list-excerpt">{{ . }}</span>{{ end }}{{ end -}}
+  </li>
+{{- end }}
+</ul>

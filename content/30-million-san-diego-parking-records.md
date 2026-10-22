@@ -2,6 +2,7 @@
 title: "30 Million San Diego Parking Records"
 date: 2021-02-23T21:10:19+00:00
 draft: false
+type: "post"
 categories: ["Mobility"]
 author: "eric"
 description: "Temporal analysis of 30 million parking records from San Diego's smart streetlamp system."
@@ -19,7 +20,7 @@ These data were scraped [using my python module, cityiq](<https://pypi.org/proje
 
 I’m just starting to analyze the parking data ( and still scraping pedestrian events ) but have some initial analysis. Here is a rhythm map ( temporal heatmap ) showing the total flow, in or out, of all parking zones in Downtown, from September 2018 to Feb 2019, at 15 minute intervals through the day.
 
-[![](/uploads/12/2019/02/tod-parking.png?resize=731%2C403)](</uploads/12/2019/02/tod-parking.png>)Downtown Parking Flow, By Month and Time of Day
+[![](/uploads/7/2019/02/tod-parking.png)](</uploads/7/2019/02/tod-parking.png>)Downtown Parking Flow, By Month and Time of Day
 
 There are some really interesting patterns here:
 
@@ -30,6 +31,6 @@ There are some really interesting patterns here:
 
 It appears that last call is a stronger motivator to go home than quitting time.  Oddly, this pattern does not change much when aggregated by time of day.
 
-[![](/uploads/12/2019/02/dow-parking.png?resize=677%2C403)](</uploads/12/2019/02/dow-parking.png>)Downtown Parking FLow, by Time of Day and Day of Week
+[![](/uploads/7/2019/02/dow-parking.png)](</uploads/7/2019/02/dow-parking.png>)Downtown Parking FLow, by Time of Day and Day of Week
 
 I’ll be posting example Notebooks for how to use the datasets, and[ watch our Meetup](<https://www.meetup.com/San-Diego-Regional-Data-Library/>) for meetings about the datasets.

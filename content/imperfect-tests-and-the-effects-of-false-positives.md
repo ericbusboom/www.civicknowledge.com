@@ -2,6 +2,7 @@
 title: "Imperfect Tests and The Effects of False Positives"
 date: 2022-02-01T22:11:51+00:00
 draft: false
+type: "post"
 categories: ["Health", "Project"]
 tags: ["covid19"]
 author: "eric"
@@ -10,7 +11,7 @@ description: "The US government has been widely criticized for its failure to te
 
 _The US government has been widely criticized for its failure to test as many of its citizens for COVID-19 infections as other countries. But is mass testing really as easy as it seems? This analysis of the false positive and false negative rates of tests, using published sensitivities and specificities for COVID-19 rt-PCR and antigen tests, shows that even tests with slightly less than perfect results can produce very large numbers of false positives._
 
-[ `[icon name="github" class="icon-2x"]` Full notebook on github  
+[ `` Full notebook on github  
 ](<https://github.com/sandiegodata/covid19/blob/master/Notebooks/WhyNotTesting.ipynb>)
 
 As the world became more aware of the threat posed by COVID-19 in February 2020, US media began to draw attention to the disparity between the extent of testing being done in other countries versus the United States. The CDC released [fairly restrictive guidelines](<https://www.cdc.gov/coronavirus/2019-ncov/hcp/clinical-criteria.html>) for what conditions qualified a patient for a lab test for COVID-19 infections, and many media outlets criticized the US CDC for being unprepared to test for the virus.
@@ -90,11 +91,11 @@ The article _Performance Evaluation of the PowerChek MERS (upE & ORF1a) Real-Tim
 > The diagnostic sensitivity and specificity of the PowerChek MERS assay were both 100% (95% confidence interval, 91.1–100%).
 
 The [Emergency Use Authorization for LabCorp's rt-PCR test](<https://www.fda.gov/media/136151/download>)6 reports:
-[code] 
-    Performance of the COVID-19 RT-PCR test against the expected results [ with NP swabs ] are:
-    Positive Percent Agreement 40/40 = 100% (95% CI: 91.24%-100%)
-    Negative Percent Agreement 50/50 = 100% (95% CI: 92.87% -100%)
-[/code]
+```
+Performance of the COVID-19 RT-PCR test against the expected results [ with NP swabs ] are:
+Positive Percent Agreement 40/40 = 100% (95% CI: 91.24%-100%)
+Negative Percent Agreement 50/50 = 100% (95% CI: 92.87% -100%)
+```
 
 Using the lower bound of the 95% CI, values convert to a specificity of .90 and sensitivity of .94.
 

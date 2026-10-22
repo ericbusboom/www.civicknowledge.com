@@ -2,6 +2,7 @@
 title: "Modeling an Infection with Changing R for San Diego County"
 date: 2022-02-01T22:04:17+00:00
 draft: false
+type: "post"
 categories: ["COVID-19", "Health"]
 tags: ["COVID-19"]
 author: "publisher"
@@ -12,7 +13,7 @@ description: "The SIR infection model is a simple way of exploring the effects o
 
 _The SIR infection model is a simple way of exploring the effects of a social distance policy on a large population such as San Diego County_
 
-[ `[icon name="github" class="icon-2x"]` Full notebook on github  
+[ `` Full notebook on github  
 ](<https://github.com/sandiegodata/covid19/blob/master/Notebooks/SIR%20Model.ipynb>)
 
 The SIR infection model is a simple set of differential equations that describe how a disease can spread under very homogeneous, stable conditions. The model gets it's name from the three "compartments" for people in diferent conditions:

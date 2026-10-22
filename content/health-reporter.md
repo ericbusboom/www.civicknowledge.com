@@ -2,6 +2,7 @@
 title: "Health Reporter"
 date: 2017-02-01T16:47:54+00:00
 draft: false
+type: "post"
 categories: ["Data Wrangling", "Indicators", "Project"]
 tags: ["Data Wrangling", "Indicators"]
 author: "eric"

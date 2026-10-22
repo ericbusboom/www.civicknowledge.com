@@ -1,8 +1,9 @@
 ---
 title: "Public Data in California: Successes and Opportunities"
-date: 2016-07-14T16:47:40+00:00
+date: "2016-07-14T16:47:40+00:00"
 draft: false
 author: "eric"
+url: "/papers/public-data-in-california-successes-and-opportunities/"
 ---
 
 _California public data is excellent, but can be improved to make it more useful for a new generation of less sophisticated analysts and programmers by improving the structure of data packages and creating new aggregations of microdata._ California's state agencies produce a wide variety of high-quality data that are crucial for understanding important social issues in health, education, and government. While these data releases are generally excellent--in some cases the best in the US--there are also opportunities to make them even more useful and valuable. This document collects Civic Knowledge's recent experience with using datasets from the California Department of Public Health, the California Office of Statewide Health Planning and Development, and the California Department of Education to develop indicator websites and perform basic visualizations and analysis.  The viewpoints in this document are from the perspective of the mid-level analyst using open source software and spreadsheet programs to perform a range of broad data tasks, rather than more sophisticated users, such as an epidemiologist who uses dedicated statistical packages like SAS. This perspective is particularly valuable as agencies in the state of California expand their data programs, because it is precisely the mid-level of data skill that represents the largest set of new users. So these recommendations are intended to ensure that California’s high-quality data releases are just as valuable and usable for the new set of users as they have been for the more experienced analysts that form the traditional base. These recommendations are organized into two areas: 

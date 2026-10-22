@@ -2,6 +2,7 @@
 title: "Pedestrians Rhythms By Neigborhood"
 date: 2022-02-01T22:16:13+00:00
 draft: false
+type: "post"
 categories: ["Analysis", "Built Environment"]
 tags: ["cityiq"]
 author: "eric"
@@ -12,7 +13,7 @@ description: "San Diego's CityIQ system consists of about 4,400 smart street lam
 
 _San Diego's CityIQ system consists of about 4,400 smart street lamps, which use a variety of sensors to track parking, pedestrians, traffic and a variety of environmental conditions. This analysis reveals pedestrian paterns using time-oriented heatmaps._
 
-[ `[icon name="github" class="icon-2x"]` Full notebook on github  
+[ `` Full notebook on github  
 ](<https://github.com/sandiegodata-projects/insights.sandiegodata.org/blob/main/blog-notebooks/urban_planning/CityIqPedestrians.ipynb>)
 
 This dataset aggregates the number of pedestrians, traveling in either direction, into 15 minute intervals, per walkway, and links the walkways to communities. Then, data is vizualized by community in a heat map with two time dimensions, known as a rhythm map. Since this data is only available for the prior 6 months, we can't analyze long term patterns, so we only present a few types of maps, including traffic for hour of day versus day of week and for hour of day versus week of year.

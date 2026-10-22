@@ -1,8 +1,9 @@
 ---
 title: "Census Data Distribution Recommendations"
-date: 2016-12-09T01:45:06+00:00
+date: "2016-12-09T01:45:06+00:00"
 draft: false
 author: "eric"
+url: "/papers/census-data-distribution-recommendations/"
 ---
 
 As the single most important collection of demographic information nationwide, the annual American Community Survey and decennial Census datasets are so important that data analysts are willing to expend almost any level of effort to use them, and this willingness masks the significant effort required to use Census data in several important use cases. However, the difficulties in acquiring Census data are not fundamental, and some relatively small changes to metadata could make many use cases much easier, particularly bulk loading Census data into databases and accessing single files for analysis. This set of recommendations is drawn from experience in using Census data in both bulk and analysis on single tables, and will cover only those use cases. Other use cases, such as building tables for a single geography, or visualizing a measure for a collection of geographies are both managed well by other tools like American Fact Finder and Census Reporter. However, these visualization tools require bulk loading census data, so while the other tools’ use cases are not relevant to these recommendations, the experiences for building and maintaining those tools is.  It is clear from recent changes to the organization of the Census FTP directories that Census staff are interested in improving bulk access. We offer these recommendations in the hope of aiding that ongoing process of improvement. 

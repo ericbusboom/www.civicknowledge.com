@@ -2,6 +2,7 @@
 title: "Crime Rhythm Maps"
 date: 2022-02-01T21:22:14+00:00
 draft: false
+type: "post"
 categories: ["Analysis", "Crime"]
 tags: ["crime"]
 author: "publisher"
@@ -12,7 +13,7 @@ description: "Exploring crime patterns with Ryhthm Maps, heat maps with two time
 
 _Exploring crime patterns with Ryhthm Maps, heat maps with two time dimensions._
 
-[ `[icon name="github" class="icon-2x"]` Full notebook on github  
+[ `` Full notebook on github  
 ](<https://github.com/sandiegodata-projects/insights.sandiegodata.org/tree/main/blog-notebooks/crime>)
 
 A Rhythm map is a heat map with two time dimensions, which makes it much esier to find temporal patterns in some kinds of data. This example will use [crime incidents from San Diego county, from 2007 to 2013.](<https://data.sandiegodata.org/dataset/clarinova_com-crime-incidents-casnd-7ba4-extract>).
@@ -49,9 +50,9 @@ Here is another interesting pattern in alcohol violations, when plotted by hour 
 ![](/uploads/3/2022/02/cd5e7005-942b-4716-94f7-ab0740967065-output_17_0.png)
 
 There are many other patterns to be found in crime dataset by looking at other combinations of time units, community, and crime type. If you'd like to explore some of these patterns, you can [clone, run and extend this notebook from github.](<https://github.com/CivicKnowledge/insights.civicknowledge.com/blob/master/crime/Crime%20Rhythm%20Maps.ipynb>)
-[code] 
-    <matplotlib.axes._subplots.AxesSubplot at 0x7fe5923feba8>
-[/code]
+```
+<matplotlib.axes._subplots.AxesSubplot at 0x7fe5923feba8>
+```
 
 ![](/uploads/3/2022/02/cd5e7005-942b-4716-94f7-ab0740967065-output_19_1.png) ![](/uploads/3/2022/02/cd5e7005-942b-4716-94f7-ab0740967065-output_20_0.png)
 
